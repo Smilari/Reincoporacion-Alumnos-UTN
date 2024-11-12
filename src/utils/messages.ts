@@ -1,6 +1,9 @@
 import { LANGUAGE } from "./config";
 import { Language } from "../types";
 
+/**
+ * This is an object that contains the messages for each language.
+ */
 const appMessages: Language = {
   en: {
     success: {
@@ -58,9 +61,11 @@ const appMessages: Language = {
       generic: "Error de validación",
       usernamePassword: "Usuario/Contraseña no válidos",
       minLength: (minLength) => {
-        return `El campo debe tener al menos ${minLength} caracteres`; },
+        return `El campo debe tener al menos ${minLength} caracteres`;
+      },
       maxLength: (maxLength) => {
-        return `El campo debe tener como máximo ${maxLength} caracteres`; },
+        return `El campo debe tener como máximo ${maxLength} caracteres`;
+      },
       requiredField: "Este campo es obligatorio",
       invalidEmail: "Email no válido",
     },
